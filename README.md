@@ -1,1 +1,1 @@
-# HIC-project
+# Final Project: Group 1
