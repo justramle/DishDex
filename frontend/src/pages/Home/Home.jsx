@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Home.css'
 import Header from '../../components/Header/Header'
 import CategoryMenu from '../../components/CategoryMenu/CategoryMenu'
+import RecipeDisplay from '../../components/RecipeDisplay/RecipeDisplay'
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Header />
       {/* pass the category into component as a property */}
       <CategoryMenu category={category} setCategory={setCategory}/>
+      <RecipeDisplay category={category}/>
     </div>
   )
 }
