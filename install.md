@@ -1,4 +1,5 @@
-- must access to frontend dir to able to run npm dev run
+### Notes:
+- must access to frontend dir to able to run 'npm run dev'
 - npm create vite@latest
 - react + js
 - all dependency: npm install

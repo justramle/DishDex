@@ -12,23 +12,25 @@ const FoodItem = ({id,name,price, description, image}) => {
     <div className='food-item'>
         <div className="food-item-image-container">
             <img className='food-item-image' src={image} alt="" />
-            {!saveDish[id]
+            {/* {!saveDish[id]
               ?<img className='save' onClick={()=>saveFood(id)}src={assets.add_icon_white} alt="" />
               :<div className='food-item-save'>
                   <img onClick={()=>removeSave(id)} src={assets.remove_icon_red} alt="" />
                   <p>{saveDish[id]}</p>
                   <img onClick={()=>saveFood(id)} src={assets.add_icon_green} alt="" />
                   
-              </div>
-            }
+              </div> 
+            } */}
         </div>
         <div className="food-item-info">
+        <img src={assets.rating_starts} alt="" />
             <div className="food-item-name-rating">
               <p>{name}</p>
-              <img src={assets.rating_starts} alt="" />
+
+
             </div>
             <p className="food-item-desc">{description}</p>
-            <p className="food-item-price">${price}</p>
+            {/* <p className="food-item-price">${price}</p> */}
         </div>      
     </div>
   )

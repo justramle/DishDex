@@ -4,12 +4,12 @@ const Header = () => {
   return (
     <div className='header'>
          <div className="header-contents">
-            <h2>Welcome dishdex</h2>
+            <h2>Welcome <span className='orange-text' style={{ color: '#f5b70a' }}>D</span>ish<span className='orange-text' style={{ color: '#f5b70a' }}>D</span>ex</h2>
             <p>Lorem ipsum dolor, m quos dolorem maxime. Quas, quaerat nisi. Lorem ipsum dolor sit, amet consectetur adipisici.</p>
             <button>View More</button>
         </div>
         <div className="header-img">
-            <img src="/main_img.png" alt="" className="headerImage" />
+            <img src="/logo.jpeg" alt="" className="headerImage" />
         </div>      
     </div>
    
