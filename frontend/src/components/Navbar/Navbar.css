@@ -1,5 +1,6 @@
 .navbar{
-    padding: 20px 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +17,7 @@
     list-style: none;
     gap: 20px;
     color: gray;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .navbar-menu :hover{
