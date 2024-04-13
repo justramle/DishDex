@@ -18,13 +18,12 @@ const Navbar = () => {
             <Link to='/menu' onClick={() => setMenu("menu")}className={menu==="menu"?"active":""}>menu</Link>
             <li onClick={() => setMenu("about us")}className={menu==="about us"?"active":""}>about us</li>
             <a href='#footer' onClick={() => setMenu("account")}className={menu==="account"?"active":""}>contact us</a>
-
-
         </ul>
         <div className="navbar-right">
             <img src={assets.search_icon} alt="" />
-            <button>sign in</button>
-            
+            <a href="/Login">
+                  <button id="signin">sign in</button>
+            </a>
         </div>
     </div>
   )

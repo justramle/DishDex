@@ -2,23 +2,26 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home/Home'
-import Footer from './components/Footer/Footer'
+import Login from './pages/Login/Login'
+import Signup from './pages/Signup/Signup'
+import About from './pages/About/About'
 import Menu from './pages/Menu/Menu'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
-  return (  //should only return 1 elements inside <></>
-    <>
-      <div className='app'>
+    return (
+        <div className='app'>
         {/* add components */}
         <Navbar />
         <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/menu' element={<Menu/>} />
+                <Route path='/' element={<Home />} />
+                <Route path='/Login' element={<Login />} />
+                <Route path='/Signup' element={<Signup />} />
+                <Route path='/About' element={<About />} />
+                <Route path='/menu' element={<Menu />} />
         </Routes>
-      </div>
-      <Footer/>
-    </>
-    
+        </div>
+
   )
 }
 
