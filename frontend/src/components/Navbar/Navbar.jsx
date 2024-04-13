@@ -14,15 +14,17 @@ const Navbar = () => {
             {/* check if class is active */}
             <li onClick={() => setMenu("home")} className={menu==="home"?"active":""}>home</li>
             <li onClick={() => setMenu("menu")}className={menu==="menu"?"active":""}>menu</li>
-            <li onClick={() => setMenu("about us")}className={menu==="about us"?"active":""}>about us</li>
+              <li onClick={() => setMenu("about us")} className={menu === "about us" ? "active" : ""}>about us</li>
+            <a href="/About">
             <li onClick={() => setMenu("account")}className={menu==="account"?"active":""}>account</li>
-
+            </a>
 
         </ul>
         <div className="navbar-right">
             <img src={assets.search_icon} alt="" />
-            <button>sign in</button>
-            
+            <a href="/Login">
+                  <button id="signin">sign in</button>
+            </a>
         </div>
     </div>
   )
