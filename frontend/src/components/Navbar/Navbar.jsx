@@ -16,8 +16,8 @@ const Navbar = () => {
             {/* check if class is active */}
             <Link to='/' onClick={() => setMenu("home")} className={menu==="home"?"active":""}>home</Link>
             <Link to='/menu' onClick={() => setMenu("menu")}className={menu==="menu"?"active":""}>menu</Link>
-            <li onClick={() => setMenu("about us")}className={menu==="about us"?"active":""}>about us</li>
-            <a href='#footer' onClick={() => setMenu("account")}className={menu==="account"?"active":""}>contact us</a>
+            <Link to='/About' onClick={() => setMenu("about us")} className={menu === "about us" ? "active" : ""}>about us</Link>
+            <Link to='/Contact' onClick={() => setMenu("account")} className={menu === "account" ? "active" : ""}>contact us</Link>
         </ul>
         <div className="navbar-right">
             <img src={assets.search_icon} alt="" />

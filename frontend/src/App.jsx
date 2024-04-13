@@ -6,6 +6,7 @@ import Login from './pages/Login/Login'
 import Signup from './pages/Signup/Signup'
 import About from './pages/About/About'
 import Menu from './pages/Menu/Menu'
+import Contact from './pages/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path='/Signup' element={<Signup />} />
                 <Route path='/About' element={<About />} />
                 <Route path='/menu' element={<Menu />} />
+                <Route path='/menu' element={<Contact />} />
         </Routes>
         </div>
 
