@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
+import LoginForm from '../../components/LoginForm/LoginForm'
 import './Login.css'
 
 const Login = () => {
     // state varibable
-    const [category, setCategory] = useState("All");
     return (
         <div>
-         Login
+            <LoginForm />
         </div>
     )
 }
