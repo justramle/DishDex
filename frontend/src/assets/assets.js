@@ -16,6 +16,7 @@ import food_3 from './food_3.webp'
 import food_4 from './food_4.webp'
 import food_5 from './food_5.webp'
 import food_6 from './food_6.jpeg'
+import food_7 from './food_7.jpeg'
 
 import add_icon_white from './add_icon_like.jpeg'
 import add_icon_green from './add_icon_green.png'
@@ -116,10 +117,17 @@ export const food_list = [
     }, {
         _id: "7",
         name: "7-layer Chicken Burrito",
-        image: food_6,
+        image: food_7,
         time: "25 mins",
         description: "This easy chicken burrito recipe has all the makings of the classic layered party dip.",
         category: "Burritos"
-    },  
+    }, {
+        _id: "8",
+        name: "Shredded Chicken Burrito",
+        image: food_8,
+        time: "30 mins",
+        description: "This Shredded Chicken Burrito comes together in about 30 minutes but also makes a great freezer meal.",
+        category: "Burritos"
+    },   
     
 ]
