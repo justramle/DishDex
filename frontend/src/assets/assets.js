@@ -17,6 +17,7 @@ import food_4 from './food_4.webp'
 import food_5 from './food_5.webp'
 import food_6 from './food_6.jpeg'
 import food_7 from './food_7.jpeg'
+import food_8 from './food_8.jpeg'
 
 import add_icon_white from './add_icon_like.jpeg'
 import add_icon_green from './add_icon_green.png'
