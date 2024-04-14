@@ -18,6 +18,7 @@ import food_5 from './food_5.webp'
 import food_6 from './food_6.jpeg'
 import food_7 from './food_7.jpeg'
 import food_8 from './food_8.jpeg'
+import food_9 from './food_9.jpeg'
 
 import add_icon_white from './add_icon_like.jpeg'
 import add_icon_green from './add_icon_green.png'
@@ -129,6 +130,13 @@ export const food_list = [
         time: "30 mins",
         description: "This Shredded Chicken Burrito comes together in about 30 minutes but also makes a great freezer meal.",
         category: "Burritos"
-    },   
+    }, {
+        _id: "9",
+        name: "Black Bean and Veggie Burritos",
+        image: food_9,
+        time: "45 mins",
+        description: "Black Bean and Veggie Burritos are stuffed with green chile rice, sautéed peppers and onions, black beans, and a creamy guacamole.",
+        category: "Burritos"
+    }, 
     
 ]
