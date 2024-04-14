@@ -1,0 +1,25 @@
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    margin-top: 10px;
+    gap: 40px;
+    row-gap: 30px;    
+}
+
+.category-name{
+    text-align: center;
+    max-width: 100%;
+}
+
+.food-item{
+    border-radius: 0px ;
+}
+
+.food-item-image{
+    width: 100%;
+    height: 100%;
+    border-radius:  0px;
+    object-fit: cover;
+}
+
+  
