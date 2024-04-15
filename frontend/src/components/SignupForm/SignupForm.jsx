@@ -28,15 +28,14 @@ function App() {
             //calls the validate function to check the validity of the form inputs and if it is valid the form is submitted
             if (this.validate()) {
                 console.log(this.state);
-
+                localStorage.setItem("username", this.state.input.username);
                 let input = {};
                 input["username"] = "";
                 input["email"] = "";
                 input["password"] = "";
                 input["confirm_password"] = "";
                 this.setState({ input: input });
-
-                alert("Form is submitted");
+                document.location = "/profile";
             }
         }
 

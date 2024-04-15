@@ -5,7 +5,7 @@ import RecipeDisplay from '../../components/RecipeDisplay/RecipeDisplay'
 
 
 const Menu = () => {
-    const [category, setCategory] = useState("All");
+    const [category, setCategory] = useState("menu");
     
     const categoryStyle = {
         fontSize: '34px',
