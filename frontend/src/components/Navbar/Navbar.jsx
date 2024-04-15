@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link to='/' onClick={() => setMenu("home")} className={menu==="home"?"active":""}>home</Link>
             <Link to='/menu' onClick={() => setMenu("menu")}className={menu==="menu"?"active":""}>menu</Link>
             <Link to='/About' onClick={() => setMenu("about us")} className={menu === "about us" ? "active" : ""}>about us</Link>
-            <Link to='/Contact' onClick={() => setMenu("account")} className={menu === "account" ? "active" : ""}>contact us</Link>
+            <Link to='/Profile' onClick={() => setMenu("profile")} className={menu === "account" ? "active" : ""}>profile</Link>
         </ul>
         <div className="navbar-right">
             <img src={assets.search_icon} alt="" />
