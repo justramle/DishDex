@@ -18,6 +18,9 @@ const Navbar = () => {
         case '/menu':
             [menu, setMenu] = useState("menu");
             break;
+        case '/Recipe':
+            [menu, setMenu] = useState("menu");
+            break;
         case '/About':
             [menu, setMenu] = useState("about us");
             break;
