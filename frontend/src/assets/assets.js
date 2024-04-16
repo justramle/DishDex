@@ -166,7 +166,7 @@ export const food_list = [
         image: food_11,
         time: "43 mins",
         description: "A crunchy treat with irresistible honey flavor and a hint of vanilla.",
-        category: "Dessers"
+        category: "Desserts"
     }, {
         _id: "12",
         name: "Cranberry Bars",
