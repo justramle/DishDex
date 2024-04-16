@@ -265,69 +265,69 @@ export const food_list = [
         time: "10 mins",
         description: "Vegan mayonnaise, pickle relish, and celery, with uncooked tofu egg, seasoned with onion powder, garlic powder, and turmeric.",
         category: "Vegan"
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    }, {
-        _id: "",
-        name: " ",
-        image: food_,
-        time: " mins",
-        description: " ",
-        category: " "
-    },
+    }, // {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // }, {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // }, {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // }, {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // }, {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // }, {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // }, {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // }, {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // }, {
+    //     _id: "",
+    //     name: " ",
+    //     image: food_,
+    //     time: " mins",
+    //     description: " ",
+    //     category: " "
+    // },
     
 ]
