@@ -35,6 +35,10 @@ import food_22 from './food_22.jpg'
 import food_23 from './food_23.jpg'
 import food_24 from './food_24.jpg'
 import food_25 from './food_25.jpg'
+import food_26 from './food_26.jpeg'
+import food_27 from './food_27.jpeg'
+import food_28 from './food_28.jpeg'
+import food_29 from './food_29.jpeg'
 
 import add_icon_white from './add_icon_like.jpeg'
 import add_icon_green from './add_icon_green.png'
@@ -56,7 +60,7 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "Salads",
         menu_image: menu_1
     },
     {
@@ -68,7 +72,7 @@ export const menu_list = [
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Sandwiches",
         menu_image: menu_4
     },
     // {
@@ -84,7 +88,7 @@ export const menu_list = [
         menu_image: menu_7
     },
     {
-        menu_name: "Soup",
+        menu_name: "Soups",
         menu_image: menu_8
     }]
 
@@ -260,40 +264,47 @@ export const food_list = [
         category: "Vegan"
     }, {
         _id: "25",
-        name: "Vegan Tofu Egg Salad Sandwiches",
+        name: "Vegan Tofu Egg Salad Sandwiche",
         image: food_25,
         time: "10 mins",
         description: "Vegan mayonnaise, pickle relish, and celery, with uncooked tofu egg, seasoned with onion powder, garlic powder, and turmeric.",
         category: "Vegan"
+    }, {
+        _id: "25",
+        name: "Vegan Tofu Egg Salad Sandwich",
+        image: food_25,
+        time: "10 mins",
+        description: "Vegan mayonnaise, pickle relish, and celery, with uncooked tofu egg, seasoned with onion powder, garlic powder, and turmeric.",
+        category: "Sandwiches"
+    },  {
+        _id: "26",
+        name: "The Best Rotisserie Chicken Sandwich",
+        image: food_26,
+        time: "10 mins",
+        description: "This rotisserie chicken sandwich is flavored with a dressing inspired by muhammara—a Middle Eastern sauce made from roasted red peppers, breadcrumbs, walnuts and spices.",
+        category: "Sandwiches"
+    }, {
+        _id: "27",
+        name: "Jalapeño-Marinated Steak Sandwich",
+        image: food_27,
+        time: "60 mins",
+        description: "Spicy and beefy jalapeño-marinated hanger steak is paired with salty cotija mayo, charred onions, and fresh cilantro, which come together in one incredibly flavorful sandwich.",
+        category: "Sandwiches"
+    }, {
+        _id: "28",
+        name: "Chicken Club",
+        image: food_28,
+        time: "5 mins",
+        description: "This chicken club is perfectly fresh with tender chicken, crisp produce, yummy bacon, and a fun twist that brings it all together.",
+        category: "Sandwiches"
+    }, {
+        _id: "29",
+        name: "Katsu Sando",
+        image: food_29,
+        time: "35 mins",
+        description: "In Japan, a popular way to serve the fried pork cutlet known as tonkatsu is between thick slices of fluffy milk bread with julienned green cabbage and tonkatsu sauce.",
+        category: "Sandwiches"
     }, // {
-    //     _id: "",
-    //     name: " ",
-    //     image: food_,
-    //     time: " mins",
-    //     description: " ",
-    //     category: " "
-    // }, {
-    //     _id: "",
-    //     name: " ",
-    //     image: food_,
-    //     time: " mins",
-    //     description: " ",
-    //     category: " "
-    // }, {
-    //     _id: "",
-    //     name: " ",
-    //     image: food_,
-    //     time: " mins",
-    //     description: " ",
-    //     category: " "
-    // }, {
-    //     _id: "",
-    //     name: " ",
-    //     image: food_,
-    //     time: " mins",
-    //     description: " ",
-    //     category: " "
-    // }, {
     //     _id: "",
     //     name: " ",
     //     image: food_,
