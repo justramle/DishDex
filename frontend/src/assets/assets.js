@@ -99,7 +99,7 @@ export const food_list = [
         image: food_1,
         time: "15 mins",
         description: "This easy Greek salad recipe is our new favorite summer side dish. Refreshing & delicious.",
-        category: "Salad"
+        category: "Salads"
     },
     {
         _id: "2",
@@ -107,21 +107,21 @@ export const food_list = [
         image: food_2,
         time: "30 mins",
         description: "Perfect way to usher in the new season! gluten-free and of course: vegan",
-        category: "Salad"
+        category: "Salads"
     }, {
         _id: "3",
         name: "Rainbow Chopped Salad with Basil & Mozzarella",
         image: food_3,
         time: "30 mins",
         description: "Fresh and colorful chopped salad. Classic caprese salad.",
-        category: "Salad"
+        category: "Salads"
     }, {
         _id: "4",
         name: "Garlic-and-Herb Potato Salad",
         image: food_4,
         time: "45 mins",
         description: "Mayo and potatoes. This gorgeous vinegar-based potato salad for you.",
-        category: "Salad"
+        category: "Salads"
     },{
         _id: "5",
         name: "Vegetarian Breakfast Burrito",
@@ -219,28 +219,28 @@ export const food_list = [
         image: food_18,
         time: "50 mins",
         description: "This lemon chicken orzo soup is light, healthy, and cozy, with celery, carrots, onion, and garlic.",
-        category: "Soup"
+        category: "Soups"
     }, {
         _id: "19",
         name: "Chicken Tetrazzini Soup",
         image: food_19,
         time: "40 mins",
         description: "A soup made with tender chicken, mushrooms, pasta, and an amazing, creamy broth.",
-        category: "Soup"
+        category: "Soups"
     }, {
         _id: "20",
         name: "Chicken Fajita Soup",
         image: food_20,
         time: "40 mins",
         description: "A simple chicken fajita soup that has all your favorite fajita flavors in a warming and cozy soup!",
-        category: "Soup"
+        category: "Soups"
     }, {
         _id: "21",
         name: "Buffalo Chicken Soup",
         image: food_21,
         time: "35 mins",
         description: "A hearty soup made with chicken, buffalo sauce, cream cheese, and celery, finished with (optional) bleu cheese.",
-        category: "Soup"
+        category: "Soups"
     }, {
         _id: "22",
         name: "Vegan Thai Lemongrass Coconut Curry Soup",
@@ -264,18 +264,11 @@ export const food_list = [
         category: "Vegan"
     }, {
         _id: "25",
-        name: "Vegan Tofu Egg Salad Sandwiche",
-        image: food_25,
-        time: "10 mins",
-        description: "Vegan mayonnaise, pickle relish, and celery, with uncooked tofu egg, seasoned with onion powder, garlic powder, and turmeric.",
-        category: "Vegan"
-    }, {
-        _id: "25",
         name: "Vegan Tofu Egg Salad Sandwich",
         image: food_25,
         time: "10 mins",
         description: "Vegan mayonnaise, pickle relish, and celery, with uncooked tofu egg, seasoned with onion powder, garlic powder, and turmeric.",
-        category: "Sandwiches"
+        category: "Vegan"
     },  {
         _id: "26",
         name: "The Best Rotisserie Chicken Sandwich",
