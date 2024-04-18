@@ -1,0 +1,53 @@
+.whoAreWe{
+    height: 65vw;
+    margin: 50px 0px;
+    padding: 50px;
+    position: relative;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+
+    /* border: 1px solid #747474; */
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.30);
+    
+}
+
+.whoAreWe-img{
+    position: flex;
+}
+
+.whoAreWeImage{
+    max-width: 90%;
+    height: auto;
+    /* align: left; */
+    /* width: 50vw;
+    height: 40vh; */
+    float: left;
+}
+
+.whoAreWe-contents{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vw;
+    max-width: 50%;
+    animation: fadeIn 3s; 
+}
+
+.whoAreWe-contents h2{
+    font-weight: 500;
+    font-size: max(4.5vw,22px);
+}
+
+.whoAreWe-contents p{
+    color: #f5b70a;
+    font-size: 2vw;
+}
+
+.whoAreWe-contents .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid gray;
+}
