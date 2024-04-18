@@ -1,5 +1,5 @@
 .whoAreWe{
-    height: 65vw;
+    height: 40vw;
     margin: 50px 0px;
     padding: 50px;
     position: relative;
@@ -10,7 +10,7 @@
 
     /* border: 1px solid #747474; */
     border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.30);
+    /* box-shadow: 0 0 30px rgba(0,0,0,0.30); */ 
     
 }
 
@@ -39,12 +39,12 @@
 
 .whoAreWe-contents h2{
     font-weight: 500;
-    font-size: max(4.5vw,22px);
+    font-size: max(3.5vw,22px);
 }
 
 .whoAreWe-contents p{
     color: #f5b70a;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .whoAreWe-contents .active {
