@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../../App.css';
+import '../../App.css'
+import './LoginForm.css'
 
 function App() {
     class RegistrationForm extends React.Component {
@@ -62,7 +63,6 @@ function App() {
         render() {
             return (
                 <div className='container'>
-                    <h1 className='text-center mb-4'>Login Form</h1>
                     <form onSubmit={this.handleSubmit}>
                         <div className='form-group'>
                             <label for="username" className='form-label fs-5 fw-bold'>USERNAME:</label>
@@ -93,13 +93,8 @@ function App() {
                             </div>
                         </div>
                         <div className='form-group'>
-                          <Link to='/Signup'>Register</Link>
+                            <center><button>LOG IN</button></center>
                         </div>
-                            <input
-                            type="submit"
-                            value="SUBMIT"
-                            className='btn btn-success d-flex justify-content-center mx-auto mb-3 px-3'
-                        />
                     </form>
                 </div>
             )
