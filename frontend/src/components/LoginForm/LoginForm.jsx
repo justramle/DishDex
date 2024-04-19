@@ -75,7 +75,7 @@ function App() {
                                 placeholder='Enter username'
                                 id="username"
                             />
-                            <div className='text-danger form-text fw-bold fs-5'>{this.state.errors.username}</div>
+                            <div className='text-danger form-text fs-5'>{this.state.errors.username}</div>
                         </div>
                         <div className='form-group'>
                             <div className='form-group'>
@@ -89,7 +89,7 @@ function App() {
                                     placeholder='Enter password'
                                     id="password"
                                 />
-                                <div className='text-danger form-text fw-bold fs-5'>{this.state.errors.password}</div>
+                                <div className='text-danger form-text fs-5'>{this.state.errors.password}</div>
                             </div>
                         </div>
                         <div className='form-group'>
