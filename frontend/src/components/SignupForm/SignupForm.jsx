@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import '../../App.css';
-
+import { Link } from 'react-router-dom'
+import '../../App.css'
+import './SignupForm.css'
 function App() {
     class RegistrationForm extends React.Component {
         constructor() {
@@ -99,69 +100,62 @@ function App() {
         render() {
             return (
                 <div className='container'>
-                    <h1 className='text-center mb-4'>REGISTRATION FORM</h1>
                     <form onSubmit={this.handleSubmit}>
-                        <div className='form-group'>
-                            <label for="username" className='form-label fs-5 fw-bold'>USERNAME:</label>
-                            <input
-                                type="text"
-                                name="username"
-                                value={this.state.input.username}
-                                onChange={this.handleChange}
-                                className='form-control fs-5'
-                                placeholder='Enter username'
-                                id="username"
-                            />
-                            <div className='text-danger form-text fw-bold fs-5'>{this.state.errors.username}</div>
-                        </div>
-                        <div className='form-group'>
-                            <label for="email" className='form-label fs-5 fw-bold'>EMAIL ADDRESS:</label>
-                            <input
-                                type="text"
-                                name="email"
-                                value={this.state.input.email}
-                                onChange={this.handleChange}
-                                className='form-control fs-5'
-                                placeholder='Enter Email'
-                                id="email"
-                            />
-                            <div className='text-danger form-text fw-bold fs-5'>{this.state.errors.email}</div>
-
+                        <div className='form-holder'>
                             <div className='form-group'>
-                                <label for="password" className='form-label fs-5 fw-bold'>PASSWORD:</label>
-                                <input
-                                    type="password"
-                                    name="password"
-                                    value={this.state.input.password}
-                                    onChange={this.handleChange}
-                                    className='form-control fs-5'
-                                    placeholder='Enter password'
-                                    id="password"
-                                />
-                                <div className='text-danger form-text fw-bold fs-5'>{this.state.errors.password}</div>
+                                <label for="username" className='form-label fs-5 fw-bold'>
+                                    USERNAME:
+                                </label>
                             </div>
-
+                            <div className='form-group'>
+                                <input type="text" name="username" value={this.state.input.username} onChange={this.handleChange} className='form-control fs-5' placeholder='Enter username' id="username" />
+                            </div>
+                            <div className='form-group form-error'>
+                                <div className='text-danger form-text fs-5'>
+                                    {this.state.errors.username}
+                                </div>
+                            </div>
+                            <div className='form-group'>
+                                <label for="email" className='form-label fs-5 fw-bold'>
+                                    EMAIL ADDRESS:
+                                </label>
+                            </div>
+                            <div className='form-group'>
+                                <input type="text" name="email" value={this.state.input.email} onChange={this.handleChange} className='form-control fs-5' placeholder='Enter Email' id="email" />
+                            </div>
+                            <div className='form-group form-error'>
+                                <div className='text-danger form-text fs-5'>
+                                    {this.state.errors.email}
+                                </div>
+                            </div>
+                            <div className='form-group'>
+                                <label for="password" className='form-label fs-5 fw-bold'>
+                                    PASSWORD:
+                                </label>
+                            </div>
+                            <div className='form-group'>
+                                <input type="password" name="password" value={this.state.input.password} onChange={this.handleChange} className='form-control fs-5' placeholder='Enter password' id="password" />
+                            </div>
+                            <div className='form-group form-error'>
+                                <div className='text-danger form-text fs-5'>
+                                    {this.state.errors.password}
+                                </div>
+                            </div>
                             <div className='form-group'>
                                 <label for="confirm-password" className='form-label fs-5 fw-bold'>CONFIRM PASSWORD:</label>
-                                <input
-                                    type="password"
-                                    name="confirm-password"
-                                    id="confirm-password"
-                                    value={this.state.input.confirm_password}
-                                    onChange={this.handleChange}
-                                    className='form-control fs-5'
-                                    placeholder='Enter confirm password'
-                                />
-                                <div className='text-danger form-text mb-5 fw-bold fs-5'>{this.state.errors.confirm_password}</div>
                             </div>
-
-
+                            <div>
+                                <input type="password" name="confirm-password" id="confirm-password" value={this.state.input.confirm_password} onChange={this.handleChange} className='form-control fs-5' placeholder='Enter confirm password' />
+                            </div>
+                            <div className='form-group form-error'>
+                                <div className='text-danger form-text mb-5 fs-5'>
+                                    {this.state.errors.confirm_password}
+                                </div>
+                            </div>
                         </div>
-                        <input
-                            type="submit"
-                            value="SUBMIT"
-                            className='btn btn-success d-flex justify-content-center mx-auto mb-3 px-3'
-                        />
+                        <div className='form-group'>
+                            <center><button>Register</button></center>
+                        </div>
                     </form>
                 </div>
             )
