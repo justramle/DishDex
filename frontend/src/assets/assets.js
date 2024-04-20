@@ -1,6 +1,8 @@
 
 import header_img from './logo.jpeg'
 import search_icon from './search_icon.png'
+
+
 import menu_1 from './menu_1.jpeg'
 import menu_2 from './menu_2.jpeg'
 import menu_3 from './menu_3.jpeg'
@@ -55,7 +57,7 @@ export const assets = {
     add_icon_white,
     remove_icon_red,
     profile_icon,
-
+   
 }
 
 export const menu_list = [
