@@ -8,7 +8,7 @@ const recipeImage = food_list[0].image;
 // Dummy data for the Greek Salad
 const recipeData = {
     title: "Greek Salad",
-    rating: 10,
+    rating: 70,
     likes: 117,
     prepTime: 15,
     totalTime: 15,
@@ -54,6 +54,7 @@ const recipeData = {
                 <div className="recipe-right">
                         <p className="recipe-description"><strong><i>Description:</i></strong> {recipeData.description}</p>
                         <div className="recipe-ingredients">
+                        <h2>Ingredients </h2>
                         {recipeData.ingredients.map((section, index) => (
                             <div key={index}>
                             <h3>{section.title}</h3>
@@ -66,7 +67,7 @@ const recipeData = {
                         ))}
                         </div>
                         <div className="recipe-instructions">
-                            <h3>Instructions</h3>
+                            <h2>Instructions</h2>
                             {recipeData.instructions.map((step, index) => (
                                 <p key={index}>{step}</p>
                             ))}
