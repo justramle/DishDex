@@ -1,5 +1,4 @@
 import React from 'react'
-// import FoodItem from '../FoodItem/FoodItem'
 import { food_list } from '../../assets/assets'
 
 import './TrendingSection.css'
@@ -22,7 +21,6 @@ const TrendingSection = () => {
                                 <img 
                                     className="trending-item-image" 
                                     src={item.image} 
-                                
                                 />
                             </div>
                             <a href="" className="trending-item-title">{item.name} (Rank Listed)</a>
