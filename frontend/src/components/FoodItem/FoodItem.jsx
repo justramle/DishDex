@@ -9,8 +9,7 @@ const FoodItem = ({id,name,time, description, image}) => {
     <div className='food-item'>
         <Link to={`/Recipe/${id}`}>
             <div className="food-item-image-container">
-                <img className='food-item-image' src={image} alt="" />
-              
+                <img className='food-item-image' src={image} alt="" />            
             </div>
             <div className="food-item-info">
               <div class="container">
@@ -19,8 +18,6 @@ const FoodItem = ({id,name,time, description, image}) => {
               </div>
                 <div className="food-item-name-rating">
                   <p>{name}</p>
-
-
                 </div>
                 <p className="food-item-desc">{description}</p>     
             </div>      
