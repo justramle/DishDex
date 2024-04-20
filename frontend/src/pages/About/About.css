@@ -27,8 +27,9 @@
     width: 80vw;
     flex: 1;
     padding: 60px;
-    background-color: #f8f9fa; 
-    border-radius: 10px; 
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px;  */
 }
 
 .content-story h2 {

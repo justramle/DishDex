@@ -31,8 +31,10 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-        {/* <img src={assets.logo} alt="" className="logo" /> */}
-        <h1>DishDex</h1>
+
+        <Link to="/">
+        <h1><span className='orange-text' style={{ color: '#f5b70a' }}>D</span>ish<span className='orange-text' style={{ color: '#f5b70a' }}>D</span>ex</h1>
+        </Link>
         <ul className="navbar-menu">
             {/* check if class is active */}
             <Link to='/' onClick={() => setMenu("home")} className={menu==="home"?"active":""}>home</Link>

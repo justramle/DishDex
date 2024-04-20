@@ -25,7 +25,7 @@
 }
 
 .header-contents h2{
-    font-size: 80px !important;
+    font-size: 60px !important;
 }
 
 .header-contents,
@@ -40,32 +40,23 @@
 
 }
 
-.header-contents h2{
-    font-weight: 500;
-    font-size: max(4.5vw,22px);
-}
-
 .header-contents p{
     color: #f5b70a;
     font-size: 1.5vw;
 }
 
-    .header-contents button {
-        margin-top:20px;
-        background: transparent;
-        font-size: 16px;
-        color: gray;
-        border: 1px solid #f5b70a;
-        padding: 10px 30px;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: 0.3s;
+    .view-more {
+        /* display: inline-block; */
+        margin-top: 25px;
+        padding: 13px 20px;
+        background-color: #f5b70a; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-size: 20px;
     }
-    .header-contents button:hover {
-        background-color: #fff4f2;
-    }
-
-    .header-contents .active {
-        padding-bottom: 2px;
-        border-bottom: 2px solid gray;
+    
+    .view-more:hover {
+        background-color: #e49b0f; 
     }

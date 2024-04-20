@@ -101,7 +101,8 @@ export const food_list = [
         image: food_1,
         time: "15 mins",
         description: "This easy Greek salad recipe is our new favorite summer side dish. Refreshing & delicious.",
-        category: "Salads"
+        category: "Salads",
+        creator: "Robert"
     },
     {
         _id: "2",
@@ -109,196 +110,216 @@ export const food_list = [
         image: food_2,
         time: "30 mins",
         description: "Perfect way to usher in the new season! gluten-free and of course: vegan",
-        category: "Salads"
+        category: "Salads",
+        creator: "John"
     }, {
         _id: "3",
         name: "Rainbow Chopped Salad with Basil & Mozzarella",
         image: food_3,
         time: "30 mins",
         description: "Fresh and colorful chopped salad. Classic caprese salad.",
-        category: "Salads"
+        category: "Salads",
+        creator: "David"
     }, {
         _id: "4",
         name: "Garlic-and-Herb Potato Salad",
         image: food_4,
         time: "45 mins",
         description: "Mayo and potatoes. This gorgeous vinegar-based potato salad for you.",
-        category: "Salads"
+        category: "Salads",
+        creator: "Marry"
     },{
         _id: "5",
         name: "Vegetarian Breakfast Burrito",
         image: food_5,
         time: "10 mins",
         description: "Tasty mix of ingredients. A great way to get your day off to a good start.",
-        category: "Burritos"
+        category: "Burritos",
+        creator: "Joseph"
     }, {
         _id: "6",
         name: "Easy Beef Burrito",
         image: food_6,
         time: "15 mins",
         description: "This is truly the easiest burrito recipe to make at home — and they're freezer-friendly!",
-        category: "Burritos"
+        category: "Burritos",
+        creator: "Christopher"
     }, {
         _id: "7",
         name: "7-layer Chicken Burrito",
         image: food_7,
         time: "25 mins",
         description: "This easy chicken burrito recipe has all the makings of the classic layered party dip.",
-        category: "Burritos"
+        category: "Burritos",
+        creator: "William"
     }, {
         _id: "8",
         name: "Shredded Chicken Burrito",
         image: food_8,
         time: "30 mins",
         description: "This Shredded Chicken Burrito comes together in about 30 minutes but also makes a great freezer meal.",
-        category: "Burritos"
-    }, {
-        _id: "9",
-        name: "Black Bean and Veggie Burrito",
-        image: food_9,
-        time: "45 mins",
-        description: "Black bean and veggie burrito stuffed with green chile rice, sautéed peppers and onions, black beans, and a creamy guacamole.",
-        category: "Burritos"
+        category: "Burritos",
+        creator: "Jennifer"
     }, {
         _id: "10",
         name: "Tiramisu",
         image: food_10,
         time: "35 mins",
         description: "Delicate ladyfinger biscuits soaked in a coffee syrup and creamy mascarpone cheese filling.",
-        category: "Desserts"
+        category: "Desserts",
+        creator: "Linda"
     }, {
         _id: "11",
         name: "Honeycomb Candy",
         image: food_11,
         time: "43 mins",
         description: "A crunchy treat with irresistible honey flavor and a hint of vanilla.",
-        category: "Desserts"
+        category: "Desserts",
+        creator: "Alizebeth"
     }, {
         _id: "12",
         name: "Cranberry Bars",
         image: food_12,
         time: "50 mins",
         description: "A sweet and buttery shortbread crust, cranberry filling, and delicious crumble topping.",
-        category: "Desserts"
+        category: "Desserts",
+        creator: "Sussan"
     }, {
         _id: "13",
         name: "Honey Cake",
         image: food_13,
         time: "5 hrs",
         description: "Delicious and moist honey cake, with a tangy sour cream frosting and prominent honey flavor.",
-        category: "Desserts"
+        category: "Desserts",
+        creator: "Daniel"
     }, {
         _id: "14",
         name: "Creamy Tomato Pasta",
         image: food_14,
         time: "25 mins",
         description: "Penne pasta tossed in a creamy tomato sauce, topped with a mix of Romano and parmesan cheese.",
-        category: "Pasta"
+        category: "Pasta",
+        creator: "Emily"
     }, {
         _id: "15",
         name: "Chicken Marsala Pasta",
         image: food_15,
         time: "30 mins",
         description: "Tender chicken, mushrooms, and a creamy marsala sauce.",
-        category: "Pasta"
+        category: "Pasta",
+        creator: "Donna"
     }, {
         _id: "16",
         name: "Garlic Butter Noodles",
         image: food_16,
         time: "20 mins",
         description: "Noodles tossed in a light garlic sauce, sprinkled with parmesan cheese.",
-        category: "Pasta"
+        category: "Pasta",
+        creator: "Michelle"
     }, {
         _id: "17",
         name: "Creamy Lemon Pasta",
         image: food_17,
         time: "25 mins",
         description: "Your choice of pasta in a creamy lemon and parmesan sauce.",
-        category: "Pasta"
+        category: "Pasta",
+        creator: "Kim"
     }, {
         _id: "18",
         name: "Lemon Chicken Orzo Soup",
         image: food_18,
         time: "50 mins",
         description: "This lemon chicken orzo soup is light, healthy, and cozy, with celery, carrots, onion, and garlic.",
-        category: "Soups"
+        category: "Soups",
+        creator: "Joss"
     }, {
         _id: "19",
         name: "Chicken Tetrazzini Soup",
         image: food_19,
         time: "40 mins",
         description: "A soup made with tender chicken, mushrooms, pasta, and an amazing, creamy broth.",
-        category: "Soups"
+        category: "Soups"   ,
+        creator: "Andrew"
     }, {
         _id: "20",
         name: "Chicken Fajita Soup",
         image: food_20,
         time: "40 mins",
         description: "A simple chicken fajita soup that has all your favorite fajita flavors in a warming and cozy soup!",
-        category: "Soups"
+        category: "Soups",
+        creator: "Donna"
     }, {
         _id: "21",
         name: "Buffalo Chicken Soup",
         image: food_21,
         time: "35 mins",
         description: "A hearty soup made with chicken, buffalo sauce, cream cheese, and celery, finished with (optional) bleu cheese.",
-        category: "Soups"
+        category: "Soups",
+        creator: "Pretty"
     }, {
         _id: "22",
         name: "Vegan Thai Lemongrass Coconut Curry Soup",
         image: food_22,
         time: "30 mins",
         description: "A light and fresh soup with spiralized sweet potato, zucchini, and celery root vegetable noodles.",
-        category: "Vegan"
+        category: "Vegan",
+        creator: "Kevin"
     }, {
         _id: "23",
         name: "Creamy Vegan Mac n Cheese",
         image: food_23,
         time: "20 mins",
-        description: "Macaroni in a creamy sauce made from a blend of coconut milk, veggies, and cashews with a blend of seasonings.",
-        category: "Vegan"
+        description: "Macaroni in a creamy sauce made from a blend of coconut milk, veggies, and cashews.",
+        category: "Vegan",
+        creator: "Brian"
     }, {
         _id: "24",
         name: "Vegan Rainbow Peanut Noodle Bowl",
         image: food_24,
         time: "20 mins",
-        description: "Linguine rice noodles in a peanut sauce, with kale, broccoli, avocado, carrots, red bell pepper, purple cabbage, seaweed, and tofu.",
-        category: "Vegan"
+        description: "peanut sauce, with kale, broccoli, avocado, carrots, red bell pepper.",
+        category: "Vegan",
+        creator: "Melissa"
     }, {
         _id: "25",
         name: "Vegan Tofu Egg Salad Sandwich",
         image: food_25,
         time: "10 mins",
-        description: "Vegan mayonnaise, pickle relish, and celery, with uncooked tofu egg, seasoned with onion powder, garlic powder, and turmeric.",
-        category: "Vegan"
+        description: "Vegan mayonnaise, pickle relish, and celery, with uncooked tofu egg.",
+        category: "Vegan",
+        creator: "Amada"
     },  {
         _id: "26",
         name: "The Best Rotisserie Chicken Sandwich",
         image: food_26,
         time: "10 mins",
-        description: "This rotisserie chicken sandwich is flavored with a dressing inspired by muhammara—a Middle Eastern sauce made from roasted red peppers, breadcrumbs, walnuts and spices.",
-        category: "Sandwiches"
+        description: "Middle Eastern sauce made from roasted red peppers, breadcrumbs, walnuts and spices.",
+        category: "Sandwiches",
+        creator: "Carol"
     }, {
         _id: "27",
         name: "Jalapeño-Marinated Steak Sandwich",
         image: food_27,
         time: "60 mins",
-        description: "Spicy and beefy jalapeño-marinated hanger steak is paired with salty cotija mayo, charred onions, and fresh cilantro, which come together in one incredibly flavorful sandwich.",
-        category: "Sandwiches"
+        description: "hanger steak is paired with salty cotija mayo, charred onions, and fresh cilantro",
+        category: "Sandwiches",
+        creator: "Patrick"
     }, {
         _id: "28",
         name: "Chicken Club",
         image: food_28,
         time: "5 mins",
         description: "This chicken club is perfectly fresh with tender chicken, crisp produce, yummy bacon, and a fun twist that brings it all together.",
-        category: "Sandwiches"
+        category: "Sandwiches"   ,
+        creator: "Raymond"
     }, {
         _id: "29",
         name: "Katsu Sando",
         image: food_29,
         time: "35 mins",
-        description: "In Japan, a popular way to serve the fried pork cutlet known as tonkatsu is between thick slices of fluffy milk bread with julienned green cabbage and tonkatsu sauce.",
-        category: "Sandwiches"
+        description: "In Japan, a popular way to serve the fried pork cutlet known as tonkatsu.",
+        category: "Sandwiches",
+        creator: "Helen"
     }, // {
     //     _id: "",
     //     name: " ",

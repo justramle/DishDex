@@ -24,7 +24,7 @@ const Menu = () => {
 
   return (
     <div>
-     <CategoryMenu category={category} setCategory={setCategory} Title="The Latest Category" titleStyle={categoryStyle} />
+     <CategoryMenu category={category} setCategory={setCategory} Title="All Category" titleStyle={categoryStyle} />
       
       <RecipeDisplay category={category} Title="All Recipes" titleStyle={recipeStyle}/>
 

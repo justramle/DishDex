@@ -1,0 +1,25 @@
+.recipe-trending {
+    width: 100%;
+    padding: 30px;
+   
+}
+
+
+.trending-item-image {
+    width: 100%;
+    height: 220px;
+}
+
+.trending-item-title {
+    margin-top:10px;
+    font-size: 24px; 
+    color: #333;
+
+}
+
+.trending-item-creator {
+    margin: 8px 0 0;
+    font-size: 16px; 
+    color: #666;
+    font-style: normal;
+}
