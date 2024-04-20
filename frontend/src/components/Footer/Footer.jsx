@@ -25,11 +25,21 @@ const Footer = () => {
                             <li><a href="#fastfood-recipes">FASTFOOD RECIPES</a></li>
                             <li><a href="#special-recipes">SPECIAL RECIPES</a></li>
                         </ul>
-
+                        
+                      
+                </div>
+                <div className="footer-content-middle-2">
+                        <ul>
+                            <li><a href="#home">About Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#policy">Reviews</a></li>
+                            <li><a href="#nutrition">Nutrition Guide</a></li>
+                            <li><a href="#policy">Policy</a></li>
+                        </ul>
                 </div>
                 <div className="footer-content-right">
                     <h4>Get In Touch</h4>
-                    <p>000-000-0001</p>
+                    <p>800-222-0001</p>
 
                 </div>
             </div>
