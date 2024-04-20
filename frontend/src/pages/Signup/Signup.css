@@ -47,6 +47,11 @@
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 1em;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover{
+    background-color: #e49b0f;
 }
 
 .signup-switch {
