@@ -6,7 +6,6 @@ const CategoryMenu = ({category,setCategory,Title="Category", titleStyle={} }) =
     <div className='category' id='category'>
       {/* Pass heading as Prop */}
         <h1 style={titleStyle}> {Title} </h1>
-        {/* <p className='category-name'>Exploring our dishes Lorem ipsum dolor, m quos dolorem maxime. Quas, quaerat nisi. .</p> */}
         <div className="category-list">
             {menu_list.map((item,index) => {
                 return (

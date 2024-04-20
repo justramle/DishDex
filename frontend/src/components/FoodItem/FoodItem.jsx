@@ -1,12 +1,9 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
-
 import './FoodItem.css'
 import { assets } from '../../assets/assets'
-// import { StoreContext } from '../../context/StoreContext'
 
 const FoodItem = ({id,name,time, description, image}) => {
-
 
   return (
     <div className='food-item'>
