@@ -12,8 +12,8 @@ import Recipe from './pages/Recipe/Recipe'
 
 const App = () => {
     const location = useLocation();
-    const hideFooterRoute = ['/Login', '/Signup'];
-    const showFooter = !hideFooterRoute.includes(location.pathname);
+    // const hideFooterRoute = ['/Login', '/Signup'];
+    // const showFooter = !hideFooterRoute.includes(location.pathname);
 
     return (
         <div className='app'>
@@ -28,7 +28,8 @@ const App = () => {
                 <Route path='/Profile' element={<Profile />} />
                 <Route path='/Recipe' element={<Recipe />} />
         </Routes>
-        {showFooter && <Footer />}
+        {/* {showFooter && <Footer />} */}
+        <Footer />
         </div>
 
   )
