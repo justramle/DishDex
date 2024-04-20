@@ -52,7 +52,7 @@ const Navbar = () => {
                 
                   {
                       localStorage.getItem("username") == null
-                          ? <a href="/Login"><button id="signin">sign in</button></a>
+                          ? <a href="/Login"><button id="signin">Log in</button></a>
                           : <a href="/"><button id="signout" onClick={() => localStorage.removeItem("username")  }>sign out</button></a>
                     }
 

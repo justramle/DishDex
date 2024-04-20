@@ -1,9 +1,12 @@
+
 .recipe-trending {
     width: 100%;
-    padding: 30px;
+    padding: 10px;
    
 }
-
+.recipe-trending h2{
+    padding-bottom: 20px;
+}
 
 .trending-item-image {
     width: 100%;
@@ -17,14 +20,11 @@
     font-style: bold;
     color: #333;
     text-decoration: none;
-
 }
 
 .trending-item-title:hover {
-    
-    color: #333;
     text-decoration: underline;
-
+    text-decoration-color: #f5b70a;
 }
 
 .trending-item-creator {
