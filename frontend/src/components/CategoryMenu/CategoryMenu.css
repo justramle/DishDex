@@ -25,8 +25,8 @@
 }
 
 .category-list::-webkit-scrollbar {
-    display: none; /* Hides scrollbar in WebKit browsers */
-}
+    display: none; 
+} 
 
 .category-list-item img{
     width: 15vw;

@@ -12,12 +12,9 @@ import Recipe from './pages/Recipe/Recipe'
 
 const App = () => {
     const location = useLocation();
-    const hideFooterRoute = ['/Login', '/Signup'];
-    const showFooter = !hideFooterRoute.includes(location.pathname);
-
+   
     return (
         <div className='app'>
-        {/* add components */}
         <Navbar />
         <Routes>
                 <Route path='/' element={<Home />} />
@@ -26,9 +23,9 @@ const App = () => {
                 <Route path='/About' element={<About />} />
                 <Route path='/menu' element={<Menu />} />
                 <Route path='/Profile' element={<Profile />} />
-                <Route path='/Recipe' element={<Recipe />} />
+                <Route path='/Recipe/:id' element={<Recipe />} />
         </Routes>
-        {showFooter && <Footer />}
+        <Footer />
         </div>
 
   )

@@ -1,63 +1,28 @@
-import React, { useState } from 'react'
-import './Navbar.css'
-import { assets } from '../../assets/assets'
-import { Link, useLocation } from 'react-router-dom'
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
-
-    // state varibles
-    let menu, setMenu;
-    let location = useLocation();
-    switch (location.pathname) {
-        case '/profile':
-            [menu, setMenu] = useState("profile");
-            break;
-        case '/':
-            [menu, setMenu] = useState("home");
-            break;
-        case '/menu':
-            [menu, setMenu] = useState("menu");
-            break;
-        case '/Recipe':
-            [menu, setMenu] = useState("menu");
-            break;
-        case '/About':
-            [menu, setMenu] = useState("about us");
-            break;
-        default:
-            [menu, setMenu] = useState("All");
-            break;
-    }
+  const location = useLocation();
+  const isLoggedIn = !!localStorage.getItem("username"); 
 
   return (
     <div className='navbar'>
-        {/* <img src={assets.logo} alt="" className="logo" /> */}
-        <h1>DishDex</h1>
+        <Link to="/">
+        <h1><span className='orange-text' style={{ color: '#f5b70a' }}>D</span>ish<span className='orange-text' style={{ color: '#f5b70a' }}>D</span>ex</h1>      
+        </Link>
         <ul className="navbar-menu">
-            {/* check if class is active */}
-            <Link to='/' onClick={() => setMenu("home")} className={menu==="home"?"active":""}>home</Link>
-            <Link to='/menu' onClick={() => setMenu("menu")}className={menu==="menu"?"active":""}>menu</Link>
-            <Link to='/About' onClick={() => setMenu("about us")} className={menu === "about us" ? "active" : ""}>about us</Link>
-
-              { localStorage.getItem("username") == null
-                ? <Link></Link>
-                  : <Link to='/Profile' onClick={() => setMenu("profile")} className={menu === "profile" ? "active" : ""}>profile</Link>
-              }
-
-          </ul>
+            <li className={location.pathname === '/' ? 'active' : ''}><Link to="/">Home</Link></li>
+            <li className={location.pathname === '/menu' ? 'active' : ''}><Link to="/menu">Menu</Link></li>
+            <li className={location.pathname === '/about' ? 'active' : ''}><Link to="/about">About Us</Link></li>
+            {isLoggedIn && <li className={location.pathname === '/profile' ? 'active' : ''}><Link to="/profile">Profile</Link></li>}
+      
+        </ul>
         <div className="navbar-right">
-              <img src={assets.search_icon} alt="" />
-                
-                  {
-                      localStorage.getItem("username") == null
-                          ? <a href="/Login"><button id="signin">sign in</button></a>
-                          : <a href="/"><button id="signout" onClick={() => localStorage.removeItem("username")  }>sign out</button></a>
-                    }
-
-              
+            <Link to="/login"><button className='login-button'>{isLoggedIn ? 'Profile' : 'Log In'}</button></Link>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

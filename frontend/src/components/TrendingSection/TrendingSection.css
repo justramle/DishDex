@@ -1,0 +1,44 @@
+
+.recipe-trending {
+    width: 100%;
+    padding: 10px;
+   
+}
+.recipe-trending h2{
+    padding-bottom: 20px;
+}
+
+.trending-item-image {
+    width: 100%;
+    height: 270px;
+}
+
+.trending-item-title {
+    display: block;
+    margin-top:10px;
+    font-size: 24px; 
+    font-style: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.trending-item-title:hover {
+    text-decoration: underline;
+    text-decoration-color: #f5b70a;
+}
+
+.trending-item-creator {
+    margin: 8px 0 0;
+    font-size: 16px; 
+    color: #666;
+    font-style: normal;
+}
+
+.trending-item-creator-2 {
+    padding:10px 0;
+    width: 55vw;
+    margin: 8px 0 0;
+    font-size: 20px; 
+    color: #666;
+    font-style: normal;
+}

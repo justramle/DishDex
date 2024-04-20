@@ -5,7 +5,7 @@ import RecipeDisplay from '../../components/RecipeDisplay/RecipeDisplay'
 
 
 const Menu = () => {
-    const [category, setCategory] = useState("menu");
+    const [category, setCategory] = useState("All");
     
     const categoryStyle = {
         fontSize: '34px',
@@ -24,7 +24,7 @@ const Menu = () => {
 
   return (
     <div>
-     <CategoryMenu category={category} setCategory={setCategory} Title="The Latest Category" titleStyle={categoryStyle} />
+     <CategoryMenu category={category} setCategory={setCategory} Title="All Category" titleStyle={categoryStyle} />
       
       <RecipeDisplay category={category} Title="All Recipes" titleStyle={recipeStyle}/>
 
