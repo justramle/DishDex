@@ -7,7 +7,7 @@ const FoodItem = ({id,name,time, description, image}) => {
 
   return (
     <div className='food-item'>
-        <Link to="/Recipe">
+        <Link to={`/Recipe/${id}`}>
             <div className="food-item-image-container">
                 <img className='food-item-image' src={image} alt="" />
               

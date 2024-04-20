@@ -10,7 +10,7 @@ const TrendingSection = () => {
   return (
     <div className='recipe-trending'>
             <h2>Popular Recipes</h2>
-            <Link to="/Recipe">
+            <Link to={"/Recipe"}>
                 <div className="trending-item-right">
                     <div className="recipe-display-list">
                         {food_list.slice(0, trendingItem).map((item) => (
