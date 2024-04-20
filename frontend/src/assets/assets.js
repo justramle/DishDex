@@ -77,10 +77,7 @@ export const menu_list = [
         menu_name: "Sandwiches",
         menu_image: menu_4
     },
-    // {
-    //     menu_name: "Cake",
-    //     menu_image: menu_5
-    // },
+    
     {
         menu_name: "Vegan",
         menu_image: menu_6
@@ -102,7 +99,7 @@ export const food_list = [
         time: "15 mins",
         description: "This easy Greek salad recipe is our new favorite summer side dish. Refreshing & delicious.",
         category: "Salads",
-        creator: "Robert"
+        creator: "Robert",
     },
     {
         _id: "2",
