@@ -11,9 +11,19 @@
 }
 
 .trending-item-title {
+    display: block;
     margin-top:10px;
     font-size: 24px; 
+    font-style: bold;
     color: #333;
+    text-decoration: none;
+
+}
+
+.trending-item-title:hover {
+    
+    color: #333;
+    text-decoration: underline;
 
 }
 

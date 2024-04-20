@@ -18,10 +18,10 @@ const TrendingSection = () => {
                             <img 
                                 className="trending-item-image" 
                                 src={item.image} 
-                                // alt={item.name} 
+                        
                             />
                         </div>
-                        <h3 className="trending-item-title">{item.name}</h3>
+                        <a href="" className="trending-item-title">{item.name} (Rank Listed)</a>
                         <p className="trending-item-creator">By {item.creator}</p> 
                     </div>
                 ))}
