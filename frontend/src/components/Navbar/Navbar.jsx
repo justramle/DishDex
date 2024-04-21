@@ -19,7 +19,11 @@ const Navbar = () => {
       
         </ul>
         <div className="navbar-right">
-            <Link to="/login"><button className='login-button'>{isLoggedIn ? 'Profile' : 'Log In'}</button></Link>
+            {
+                localStorage.getItem("username") == null
+                    ? <a href="/Login"><button id="signin">Log In</button></a>
+                    : <a href="/"><button id="signout" onClick={() => localStorage.removeItem("username")}>Log Out</button></a>
+            }
         </div>
     </div>
   );
