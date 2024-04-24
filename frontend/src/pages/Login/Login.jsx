@@ -18,7 +18,7 @@ const Login = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         if (data.name && data.password) {
-            localStorage.setItem("username", "user");
+            localStorage.setItem("username", data.name );
             navigate('/profile');    
         } else {
             console.error('Please fill in all fields.');
