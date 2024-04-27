@@ -17,7 +17,10 @@ const Login = () => {
     const navigate = useNavigate();
     const onSubmit = (e) => {
         e.preventDefault();
-        if (data.name && data.password) {
+        document.getElementById('badpass').className = "goodpass";
+        if (data.password == "fail") {
+            document.getElementById('badpass').className = "badpass";
+        } else if (data.name && data.password) {
             localStorage.setItem("username", data.name );
             navigate('/profile');    
         } else {
@@ -50,6 +53,7 @@ const Login = () => {
                         placeholder="Password" 
                         required 
                     />
+                    <label id="badpass"  name="badpass" className="goodpass" >invalid Password</label>
                     <button type="submit" className="signup-button" >Log In</button>
                 </form>
                 <p>Don't Have An Account? <Link to="/signup" className="signup-switch">Join Now</Link></p>

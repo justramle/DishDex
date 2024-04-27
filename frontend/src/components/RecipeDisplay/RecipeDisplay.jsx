@@ -6,6 +6,23 @@ import FoodItem from '../FoodItem/FoodItem'
 const RecipeDisplay = ({category, Title = "Trending Meals", titleStyle= {}}) => {
 
     const { food_list } = useContext(StoreContext)
+    var myrec = JSON.parse(localStorage.getItem("myrecipes"));
+    if (myrec != undefined) {
+        myrec.forEach(function (arrayItem) {
+            var found = false;
+            food_list.forEach(function ( foodItem, foodindex) {
+
+                if (arrayItem._id == foodItem._id) {
+                    found = true;
+                }
+                                
+            });
+            if (!found) {
+                food_list.push(arrayItem);
+            }       
+       });
+
+    }
 
     return (
      
