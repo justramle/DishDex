@@ -30,14 +30,18 @@ const Recipe = () => {
     const { id } = useParams();
     // Find the recipe with the matching id
     const recipeData = food_list.find(item => item._id === id);
+    alert(recipeData.custom);
     if (!recipeData) {
         return <div>Recipe not found</div>;
       }
     return (
         <div className="recipe-container">
-
             <div className="recipe-header">
-            <h2>{recipeData.name}</h2>
+                <div class="buttonholder">
+                    <button class="roundbutton topbutton" id="signin">Add To Your Recipes</button>
+                    <button class="roundbutton bottombutton" id="signin">Delete Recipe</button>
+                </div>
+                <h2>{recipeData.name}</h2>
             </div>
 
             <div className="recipe-details">
