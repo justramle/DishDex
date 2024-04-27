@@ -54,4 +54,13 @@
     color: #f5b70a; 
     cursor: pointer;
 }
-
+.badpass {
+    color: red;
+    font-weight: bold;
+    display:block
+}
+.goodpass {
+    color: red;
+    font-weight: bold;
+    display: none
+}
