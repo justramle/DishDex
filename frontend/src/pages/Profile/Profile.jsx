@@ -44,6 +44,11 @@ const Profile = () => {
         modal.style.display = "block";
     };
 
+    const closeRecipeHandler = (event) => {
+        var modal = document.getElementById("addRecipeModel");
+        modal.style.display = "none";
+    };
+
 
 
 
@@ -207,6 +212,7 @@ const Profile = () => {
               </div>
               <div id="addRecipeModel" class="modal">
                   <div class="modal-content-recipe" >
+                      <span class="close" onClick={closeRecipeHandler} >&times;</span>
                       <form onSubmit={onSubmitRecipe}>
                           <h2>Add A Recipe</h2>
                           <div className="addrecipe" >
