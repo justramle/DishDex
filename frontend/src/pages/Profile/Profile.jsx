@@ -36,7 +36,10 @@ const Profile = () => {
         var modal = document.getElementById("myModal");
         modal.style.display = "none";
     };
-
+    const saveHandler2 = (event) => {
+        var modal = document.getElementById("addRecipeModel");
+        modal.style.display = "none";
+    };
 
 
     const addRecipeHandler = (event) => {
@@ -97,13 +100,14 @@ const Profile = () => {
 
 
         myrec.push({
-            _id: String(nextcount) ,
+            _id: String(nextcount),
+            custom: true,
             name: e.target.title.value, 
             description: e.target.desc.value,
             image: imgloc,
             category: e.target.category.value,
             time: "15 mins",
-            creator: "Robert",
+            creator: localStorage.getItem("username"),
             rating: 70,
             likes: 117,
             prepTime: 15,
@@ -208,9 +212,10 @@ const Profile = () => {
               <div id="addRecipeModel" class="modal">
                   <div class="modal-content-recipe" >
                       <form onSubmit={onSubmitRecipe}>
+                          <span class="close" onClick={saveHandler2} >&times;</span>
                           <h2>Add A Recipe</h2>
                           <div className="addrecipe" >
-                              <div class="doublewide"><img name="dispimage" id="dispimage" src="/src/assets/food_21.jpg" width="150px" /></div>
+                              <div class="doublewide"><img name="dispimage" id="dispimage" src="/src/assets/blank.png" class="imgholder" /></div>
                               <div class="recipe-leftside labeltag">Image:</div>
                               <div class="recipe-rightside"><input type="file" NAME="image" id="image" onChange={changedispimage} /></div>
                               <div class="recipe-leftside labeltag">Category</div>

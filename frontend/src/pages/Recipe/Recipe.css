@@ -95,4 +95,28 @@
     font-size: 18px;
 }
 
+.recipe-container {
 
+}
+.roundbutton {
+    position: absolute;
+    background: transparent;
+    font-size: 16px;
+    color: gray;
+    border: 1px solid #f5b70a;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonholder {
+    position: relative;
+    left: 590px;
+}
+.topbutton {
+    top: -31px;
+}
+.bottombutton {
+    top: 28px;
+}
