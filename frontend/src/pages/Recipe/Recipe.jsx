@@ -5,6 +5,28 @@ import './Recipe.css'
 
 const Recipe = () => {
 
+
+    var myrec = JSON.parse(localStorage.getItem("myrecipes"));
+    if (myrec != undefined) {
+        myrec.forEach(function (arrayItem) {
+            var found = false;
+            food_list.forEach(function (foodItem, foodindex) {
+
+                if (arrayItem._id == foodItem._id) {
+                    found = true;
+                }
+
+            });
+            if (!found) {
+                food_list.push(arrayItem);
+            }
+        });
+
+    }
+    
+
+
+
     const { id } = useParams();
     // Find the recipe with the matching id
     const recipeData = food_list.find(item => item._id === id);
