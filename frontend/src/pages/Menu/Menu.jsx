@@ -6,7 +6,7 @@ import RecipeDisplay from '../../components/RecipeDisplay/RecipeDisplay'
 
 const Menu = () => {
     const [category, setCategory] = useState("All");
-    
+    localStorage.setItem("onlymyrecipes", "all")
     const categoryStyle = {
         fontSize: '34px',
         display: 'flex',
@@ -24,10 +24,9 @@ const Menu = () => {
 
   return (
     <div>
-     <CategoryMenu category={category} setCategory={setCategory} Title="All Categories" titleStyle={categoryStyle} />
+      <CategoryMenu category={category} setCategory={setCategory} Title="All Categories" titleStyle={categoryStyle} />
       
-      <RecipeDisplay category={category} Title="All Recipes" titleStyle={recipeStyle}/>
-
+          <RecipeDisplay category={category} setCategory={setCategory} Title="All Recipes" titleStyle={recipeStyle}/>
     </div>
     
   )

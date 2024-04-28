@@ -36,15 +36,16 @@ const Profile = () => {
         var modal = document.getElementById("myModal");
         modal.style.display = "none";
     };
-
+    const saveHandler2 = (event) => {
+        var modal = document.getElementById("addRecipeModel");
+        modal.style.display = "none";
+    };
 
 
     const addRecipeHandler = (event) => {
         var modal = document.getElementById("addRecipeModel");
         modal.style.display = "block";
     };
-
-
 
 
 
@@ -86,24 +87,31 @@ const Profile = () => {
         nextcount = eval(nextcount) + 1;
 
         var modal = document.getElementById("addRecipeModel");
-        var myrec = JSON.parse( localStorage.getItem("myrecipes") );
-        if (myrec == undefined) {
-            myrec = new Array();
-        }
 
+
+        var rawrec = localStorage.getItem("myrecipes");
+        if (rawrec != null) {
+            var myrec = JSON.parse(localStorage.getItem("myrecipes"));
+            if (myrec == undefined) {
+                myrec = new Array();
+            }
+        } else {
+            var myrec = [];
+        }
 
 
         var imgloc = String(e.target.image.value).replace("C:\\fakepath\\", "/src/assets/");
 
 
         myrec.push({
-            _id: String(nextcount) ,
+            _id: String(nextcount),
+            custom: true,
             name: e.target.title.value, 
             description: e.target.desc.value,
             image: imgloc,
             category: e.target.category.value,
             time: "15 mins",
-            creator: "Robert",
+            creator: localStorage.getItem("username"),
             rating: 70,
             likes: 117,
             prepTime: 15,
@@ -118,44 +126,35 @@ const Profile = () => {
                 "Make the dressing: In a small bowl, whisk together the olive oil, vinegar, garlic, oregano, mustard, salt, and several grinds of pepper.",
                 "On a large platter, arrange the cucumber, green pepper, cherry tomatoes, feta cheese, red onions, and olives. Drizzle with the dressing and very gently toss. Sprinkle with a few generous pinches of oregano and top with the mint leaves. Season to taste and serve."
             ]
-
-
-
-
-
-
-
-
-
-
-
-
-
         });
+
         localStorage.setItem("myrecipes", JSON.stringify(myrec));
 
         modal.style.display = "none";
         location.reload();
     };
+    var rawrec = localStorage.getItem("myrecipes");
+    if (rawrec != null) {
+        var myrec = JSON.parse(localStorage.getItem("myrecipes"));
+        if (myrec != undefined) {
+            myrec.forEach(function (arrayItem) {
+                var found = false;
+                food_list.forEach(function (foodItem, foodindex) {
 
-    var myrec = JSON.parse(localStorage.getItem("myrecipes"));
-    if (myrec != undefined) {
-        myrec.forEach(function (arrayItem) {
-            var found = false;
-            food_list.forEach(function (foodItem, foodindex) {
+                    if (arrayItem._id == foodItem._id) {
+                        found = true;
+                    }
 
-                if (arrayItem._id == foodItem._id) {
-                    found = true;
+                });
+                if (!found) {
+                    food_list.push(arrayItem);
                 }
-
             });
-            if (!found) {
-                food_list.push(arrayItem);
-            }
-        });
 
+        }
+    } else {
+        var myrec = [];
     }
-
 
     /*
     menu_list.forEach(function (arrayItem) {
@@ -208,9 +207,10 @@ const Profile = () => {
               <div id="addRecipeModel" class="modal">
                   <div class="modal-content-recipe" >
                       <form onSubmit={onSubmitRecipe}>
+                          <span class="close" onClick={saveHandler2} >&times;</span>
                           <h2>Add A Recipe</h2>
                           <div className="addrecipe" >
-                              <div class="doublewide"><img name="dispimage" id="dispimage" src="/src/assets/food_21.jpg" width="150px" /></div>
+                              <div class="doublewide"><img name="dispimage" id="dispimage" src="/src/assets/blank.png" class="imgholder" /></div>
                               <div class="recipe-leftside labeltag">Image:</div>
                               <div class="recipe-rightside"><input type="file" NAME="image" id="image" onChange={changedispimage} /></div>
                               <div class="recipe-leftside labeltag">Category</div>
@@ -236,7 +236,7 @@ const Profile = () => {
 
             <div className="user-stats">
                 <div className="user-stats-item">
-                      <span className="stats-number">+{food_list.length}</span>
+                      <span className="stats-number">+{myrec.length}</span>
                   <span className="stats-label">Recipes</span>
                 </div>
                 <div className="user-stats-item">

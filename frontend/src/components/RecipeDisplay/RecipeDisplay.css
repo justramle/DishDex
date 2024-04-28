@@ -14,3 +14,28 @@
     gap: 40px;
     row-gap: 30px;
 }
+
+.linkul {
+    list-style-type: none;
+}
+.linkactive {
+    padding-bottom: 2px;
+    border-bottom: 2px solid gray;
+}
+.linkinactive {
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+}
+
+.visbutton {
+    display:block
+}
+.hidbutton {
+    display:none;
+}
+.showlinks{
+    display:block;
+}
+.nolinks{
+    display:none;
+}

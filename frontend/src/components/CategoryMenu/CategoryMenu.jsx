@@ -1,7 +1,11 @@
 import React from 'react'
 import './CategoryMenu.css'
 import { menu_list } from '../../assets/assets'
-const CategoryMenu = ({category,setCategory,Title="Category", titleStyle={} }) => {
+const CategoryMenu = ({ category, setCategory, Title = "Category", titleStyle = {} }) => {
+    if (document.getElementById("myr")) {
+        document.getElementById("myr").className = "linkinactive";
+        document.getElementById("allr").className = "linkactive";
+    }
   return (
     <div className='category' id='category'>
       {/* Pass heading as Prop */}

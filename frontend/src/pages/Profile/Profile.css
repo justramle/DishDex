@@ -105,7 +105,7 @@
     margin: auto;
     padding: 12px;
     border: 1px solid #888;
-    width: 333px;
+    width: 433px;
     margin-top: 52px;
     height: 247px;
     border-radius: 10px;
@@ -116,9 +116,9 @@
     margin: auto;
     padding: 12px;
     border: 1px solid #888;
-    width: 401px;
+    width: 456px;
     margin-top: 52px;
-    height: 557px;
+    height: 535px;
     border-radius: 10px;
 }
 
@@ -173,4 +173,9 @@
 }
 .labeltag {
     font-weight:bold;
+}
+.imgholder {
+    border:1px solid red;
+    width:120px;
+    height:190px;
 }
