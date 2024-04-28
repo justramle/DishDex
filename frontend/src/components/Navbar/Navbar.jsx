@@ -6,6 +6,13 @@ const Navbar = () => {
   const location = useLocation();
   const isLoggedIn = !!localStorage.getItem("username"); 
 
+    const logmeout = (event) => {
+        localStorage.removeItem("username");
+        localStorage.removeItem("myrecipes");
+        localStorage.removeItem("onlymyrecipes");
+        localStorage.removeItem("savedrecipes");
+    }
+
   return (
     <div className='navbar'>
         <Link to="/">
@@ -22,7 +29,7 @@ const Navbar = () => {
             {
                 localStorage.getItem("username") == null
                     ? <a href="/Login"><button id="signin">Log In</button></a>
-                    : <a href="/"><button id="signout" onClick={() => localStorage.removeItem("username")}>Log Out</button></a>
+                      : <a href="/"><button id="signout" onClick={logmeout}>Log Out</button></a>
             }
         </div>
     </div>

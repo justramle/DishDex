@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './FoodItem.css'
 import { assets } from '../../assets/assets'
 
-const FoodItem = ({id,name,time, description, image}) => {
+const FoodItem = ({id,name,time, description, image,custom}) => {
 
   return (
-    <div className='food-item'>
+      <div className='food-item' name={custom}>
         <Link to={`/Recipe/${id}`}>
             <div className="food-item-image-container">
                 <img className='food-item-image' src={image} alt="" />            
