@@ -6,42 +6,124 @@ import './Recipe.css'
 const Recipe = () => {
 
 
-    var myrec = JSON.parse(localStorage.getItem("myrecipes"));
-    if (myrec != undefined) {
-        myrec.forEach(function (arrayItem) {
-            var found = false;
-            food_list.forEach(function (foodItem, foodindex) {
 
-                if (arrayItem._id == foodItem._id) {
-                    found = true;
+
+    var rawrec = localStorage.getItem("myrecipes");
+    if (rawrec != null) {
+        var myrec = JSON.parse(localStorage.getItem("myrecipes"));
+        if (myrec != undefined) {
+            myrec.forEach(function (arrayItem) {
+                var found = false;
+                food_list.forEach(function (foodItem, foodindex) {
+
+                    if (arrayItem._id == foodItem._id) {
+                        found = true;
+                    }
+
+                });
+                if (!found) {
+                    food_list.push(arrayItem);
                 }
-
             });
-            if (!found) {
-                food_list.push(arrayItem);
+
+        }
+    } else {
+        var myrec = [];
+    }
+
+    const AddtoMyRecipes = (event) => {
+        var savedraw = localStorage.getItem("savedrecipes");
+        var saved = [];
+        var found = false;
+        if (savedraw != null) {
+            saved = JSON.parse(savedraw);
+        } 
+        saved.forEach(function (item) {
+
+            if (item == id) {
+                found = true;
             }
         });
+        if (found == false ) {
+            saved.push(id);
+        }
+        localStorage.setItem("savedrecipes",JSON.stringify(saved));
+        location.replace("/menu");
 
-    }
-    
+    };
+    const RemoveMyRecipes = (event) => {
 
 
+        var rawsvrec = localStorage.getItem("savedrecipes");
+        var svrec = [];
+        var sliced = [];
+
+
+        if (rawsvrec != null) {
+            svrec = JSON.parse(rawsvrec);
+            var pos = svrec.indexOf(id);
+            if (pos > -1) {
+                pos += 1;
+                sliced = svrec.slice(pos);
+                localStorage.setItem("savedrecipes",JSON.stringify(sliced));
+            }
+        }
+
+
+        var rawrec = localStorage.getItem("myrecipes");
+        if (rawrec.length > 0) {
+            var myrec = JSON.parse(localStorage.getItem("myrecipes"));
+            var nrec = [];
+            if (myrec != undefined) {
+                myrec.forEach(function (arrayItem) {
+                    if (arrayItem._id != id) {
+                        nrec.push(arrayItem);
+                    }
+                    localStorage.setItem("myrecipes", JSON.stringify(nrec));
+                });
+            }
+        } else {
+            var myrec = [];
+        }
+        location.replace("/menu");
+    };
 
     const { id } = useParams();
     // Find the recipe with the matching id
     const recipeData = food_list.find(item => item._id === id);
-    alert(recipeData.custom);
+    //alert(recipeData.custom);
     if (!recipeData) {
         return <div>Recipe not found</div>;
-      }
+    }
+
+    var firstbutton = "";
+    var secondbutton = "";
+
+    var username = localStorage.getItem("username");
+    if (username != null) {
+        if (recipeData.custom) {
+
+            firstbutton = "roundbutton hidbutton";
+            secondbutton = "roundbutton visbutton";
+        } else {
+            firstbutton = "roundbutton visbutton";
+            secondbutton = "roundbutton hidbutton";
+
+        }
+    } else {
+        firstbutton = "roundbutton hidbutton";
+        secondbutton = "roundbutton hidbutton";
+    }
+
     return (
         <div className="recipe-container">
             <div className="recipe-header">
-                <div class="buttonholder">
-                    <button class="roundbutton topbutton" id="signin">Add To Your Recipes</button>
-                    <button class="roundbutton bottombutton" id="signin">Delete Recipe</button>
-                </div>
-                <h2>{recipeData.name}</h2>
+                
+                <center>
+                    <h2>{recipeData.name}</h2>
+                    <button onClick={AddtoMyRecipes} class={firstbutton} id="addRecipe">Add To Your Recipes</button>
+                    <button onClick={RemoveMyRecipes} class={secondbutton} id="delRecipe">Delete Recipe</button>
+                </center>
             </div>
 
             <div className="recipe-details">

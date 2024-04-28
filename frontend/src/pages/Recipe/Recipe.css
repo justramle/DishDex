@@ -99,24 +99,13 @@
 
 }
 .roundbutton {
-    position: absolute;
-    background: transparent;
-    font-size: 16px;
-    color: gray;
-    border: 1px solid #f5b70a;
-    padding: 10px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
+    margin-top: 25px;
+    padding: 13px 20px;
+    background-color: #f5b70a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 20px;
 }
 
-.buttonholder {
-    position: relative;
-    left: 590px;
-}
-.topbutton {
-    top: -31px;
-}
-.bottombutton {
-    top: 28px;
-}
