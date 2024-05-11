@@ -3,11 +3,15 @@
 
 ## Instruction to run the project environment on your local machine
 - Clone the repository from github repo: https://github.com/justramle/DishDex
+  
 - Or open DishDex folder on your local machine
+  
 - Navigate to the project directory by run:
  `cd frontend`
+
 - Next install all the dependencies by run:
 `npm install`
+
 - Next to start the development server and open the project on local host run:
 `npm run dev`
 
